@@ -6,6 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -53,11 +56,17 @@ public class DetectService extends IntentService {
     private void checkScreen(){
         KeyguardManager myKM = (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
         boolean isPhoneLocked = myKM.inKeyguardRestrictedInputMode();
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference(Long.toString(System.currentTimeMillis()));
         if(!isPhoneLocked){
+            myRef.setValue("False");
             Log.d(Tag, "Student is using his phone!");
         }
         else {
+            myRef.setValue("True");
             Log.d(Tag, "Student's phone is locked");
         }
+
     }
 }

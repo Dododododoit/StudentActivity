@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "309281486517",
+    "firebase_url": "https://studentactivity-b4778.firebaseio.com",
+    "project_id": "studentactivity-b4778",
+    "storage_bucket": "studentactivity-b4778.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309281486517:android:fc5c507b2edad88b",
+        "android_client_info": {
+          "package_name": "umich.edu.studentactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309281486517-cje671u64i6ldlbn3i9e41f8hpugc9mi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umich.edu.studentactivity",
+            "certificate_hash": "a89ee0da934b2d185eb160fd4f0926cf81c0309f"
+          }
+        },
+        {
+          "client_id": "309281486517-pqacumdg7mke1ail8aa9nhhq52g3r5vl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvyaySwh1H8PbyzXFy-Lwfki7gcoSY4K0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309281486517-pqacumdg7mke1ail8aa9nhhq52g3r5vl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
